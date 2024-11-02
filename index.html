@@ -4,6 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAYFBMVEX///8AAAAkJCTy8vLt7e1XV1fJyckPDw8pKSkfHx86Ojo0NDQYGBjh4eEsLCwcHByMjIwICAidnZ3Z2dnBwcFhYWFSUlJISEj5+fmmpqZAQECtra3n5+d+fn5nZ2fS0tLrL4VhAAACX0lEQVRoge2ai46rIBCGwQuCigparavdff+3PIzW1cUbzYGc7Yl/mtS0w5cpMzBcihCIt3Uu8KkoY/TcSuR1y9EkX0bnTZSiDOPM0FT6IzuojeyV6PAyUx0Mfo/suA5PFTMWn1vV8UgH3yU8NYQHp+JJmiYmdqQBplSxhE4skIl8D2PPNzItFDTlqAW/jRq8Akfge4egx4l9OIFeR7mKJT83fhXOVVRzJKassQuH/BZIuR+6gIcKfMF/C7x/PHpX8Psnxp93R/AdygV/VzgCyrrBX8J5o1fiZpHvOnyynjVbb8DlaBMB/LmGkPtwua758gDeYt1z3O7D2zW8PYAHhb6GKIJ9+GQ9a7beDKi+hkBoH/60XmjxzX+Y5xd8u1g8MH64KhYo6LqNuvoOBfqCX/B/AI9wyH0j9ZkQWW9my0MFRjSjceIZKfug9CMzs01iBUYMY5aui+GWBJRWg/MHUApct3Cn3eI0oPh98/yCX/AL/j7wu7yV03N5kz8WjDr83urblvbbfhOudmisGh8r9mMvt4Z362m8O4TfYKIfzhkJlJDbEbxYw7+PVjfhpQc2yvcK3ll5BOdNpKnhh3BEcvWJVxHYh6bVkr0OaE80zdvtnWyBg1KcDMfU2jGsjVRUTntC7dBppTWwkuckUSU+SlbHx/bgItEdtwKvKGZCeCqq9uEuA1rB2KHESSqWbDmIcruDaB7+X7n14b+cuHLbE5fTKfdIv7sSXfAR7vQSyuH1GXN78ef0ytLpZavTa2JnF9zh8BvdXM2Hz/7zpdnm/4U/FaRyjg3v7P4dohtHzh9tQDFJmMRoNQAAAABJRU5ErkJggg==" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .calculator {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 15px;
+            margin: 5px;
+            font-size: 1.5em;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        #calculate {
+            background-color: #28a745;
+        }
+
+        #calculate:hover {
+            background-color: #218838;
+        }
+
+        #clear {
+            background-color: #dc3545;
+        }
+
+        #clear:hover {
+            background-color: #c82333;
+        }
+
+    </style>
 </head>
 <body>
     <div class="calculator">
@@ -24,7 +91,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      
+        
     </script>
 </body>
 </html>
