@@ -92,35 +92,58 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    $('#calculate').on('click', function () {
-        const num1 = parseFloat($('#num1').val());
-        const num2 = parseFloat($('#num2').val());
-        let result;
+    $(document).ready(function() {
+        let operation = '';
+        
+        $('.btn').on('click', function() {
+            const op = $(this).data('op');
+            if (op) {
+                operation = op;
+                if (op !== 'sqrt') {
+                    $('#num2').show();
+                } else {
+                    $('#num2').hide();
+                }
+            }
+        });
 
-        switch (operation) {
-            case 'add':
-                result = num1 + num2;
-                break;
-            case 'subtract':
-                result = num1 - num2;
-                break;
-            case 'multiply':
-                result = num1 * num2;
-                break;
-            case 'divide':
-                result = num2 !== 0 ? num1 / num2: "Error";
-                break;
-            case exponent: 
-                result = Math.pow(num1, num2);
-                break;
-            case 'sqrt': 
-                result = Math.sqrt(num1);
-                break;
-            default: 
-                result = "Please select an operation";
-        }
 
-        $('#input').val(result);
+        $('#calculate').on('click', function () {
+            const num1 = parseFloat($('#num1').val());
+            const num2 = parseFloat($('#num2').val());
+            let result;
+
+            switch (operation) {
+                case 'add':
+                    result = num1 + num2;
+                    break;
+                case 'subtract':
+                    result = num1 - num2;
+                    break;
+                case 'multiply':
+                    result = num1 * num2;
+                    break;
+                case 'divide':
+                    result = num2 !== 0 ? num1 / num2: "Error";
+                    break;
+                case exponent: 
+                    result = Math.pow(num1, num2);
+                    break;
+                case 'sqrt': 
+                    result = Math.sqrt(num1);
+                    break;
+                default: 
+                    result = "Please select an operation";
+            }
+
+            $('#input').val(result);
+        });
+
+        $('#clear').on('click', function () {
+            $('#num1')
+            $('#num2')
+            $('#input')
+        });
     });
 </script>
 </html>
